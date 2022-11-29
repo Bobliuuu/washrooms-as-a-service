@@ -1,0 +1,151 @@
+:root {
+  --font-grey: #646f77;
+  --light-white: #e1e4e8;
+  --light-grey: #aeb4ac;
+  font-family: monospace, sans-serif;
+}
+
+form h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.adminpage-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-grey);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--light-white);
+  padding: 45px;
+  border-radius: 12px;
+}
+
+input {
+  color: var(--font-grey);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.input-container input {
+  width: fit-content;
+}
+
+.categories-container .categories-title,
+.ratings-container .members-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.check-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-containers {
+  display: flex;
+  justify-content: space-between;
+}
+
+form button {
+  background-color: var(--light-grey);
+  border: none;
+  color: var(--font-grey);
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+form button:hover {
+  background-color: #b5bdc4;
+  cursor: pointer;
+}
+
+.rating {
+  position: relative;
+  height: 50px;
+  font-size: 3rem;
+}
+
+.ratings-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ratings-subtitle {
+  font-size: 1.2rem;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: white;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: gold;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
