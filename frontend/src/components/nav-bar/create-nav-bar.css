@@ -1,0 +1,20 @@
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.topnav-left,
+.topnav-right {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  font-weight: 700;
+  font-size: 1.3rem;
+}

@@ -1,11 +1,12 @@
 import "./App.css";
 import React from "react";
-import { GenerateForm } from "./form/GenerateForm";
+import { GenerateForm } from "./components/form/GenerateForm";
+import { CreateNavBar } from "./components/nav-bar/CreateNavBar";
 
 function App() {
   return (
     <div>
-      <GenerateForm />
+      <CreateNavBar />
     </div>
   );
 }
