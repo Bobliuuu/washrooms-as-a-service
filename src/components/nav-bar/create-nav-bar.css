@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   background-color: aliceblue;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
 }
 
 .topnav-left,

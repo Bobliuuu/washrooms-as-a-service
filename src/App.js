@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Map, MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import { GenerateForm } from "./components/form/GenerateForm";
 import { CreateNavBar } from "./components/nav-bar/CreateNavBar";
@@ -67,10 +67,12 @@ function App() {
   return (
     <div className="App">
         <CreateNavBar />
+        <Router>
         <Routes>
         {/* <Route exact path="/" element={<Homepage />}/>  */}
-        <Route path="/about" element={<About />} />
+        <Route path="/form" element={<GenerateForm />} />
         </Routes>
+        </Router>
         <Map ref={mapRef} center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
