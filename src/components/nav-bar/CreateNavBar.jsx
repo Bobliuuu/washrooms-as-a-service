@@ -1,7 +1,8 @@
 import "./create-nav-bar.css";
 import React from "react";
 import logo from "../../assets/washroom-as-service.png";
-
+//import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { GenerateForm } from "../form/GenerateForm.jsx";
 import { Link } from 'react-router-dom';
 
 export const CreateNavBar = () => {
@@ -20,3 +21,4 @@ export const CreateNavBar = () => {
         </div>
     )
 }
+
